@@ -10,7 +10,7 @@ you should write a python class and offer three methods, i.e., `step(), render()
 ```python
 from gym.envs.classic_control.grid_mdp import GridEnv
 ```
-- than add the following code blocks to the end of the file /gym/gym/envs/`__init__`.py:
+- then add the following code blocks to the end of the file /gym/gym/envs/`__init__`.py:
 ```python
     register(
         id='GridWorld-v0',

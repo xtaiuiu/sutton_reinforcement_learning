@@ -1,9 +1,9 @@
-##use gym to explore you reinforcement learning algorithms
-####1. define your model
+## use gym to explore you reinforcement learning algorithms
+#### 1. define your model
 
 you should write a python class and offer three methods, i.e., `step(), render(), reset()`
 
-####2. register in gym
+#### 2. register in gym
 
 - put the python file into /gym/gym/envs/classic_control/ to use the rendering module
 - add the following code to `__init__`.py of that folder:
@@ -20,7 +20,7 @@ from gym.envs.classic_control.grid_mdp import GridEnv
         )
 
 ```
-####3. explore you algorithms on that model:
+#### 3. explore you algorithms on that model:
 ```python
     env = gym.make('GridWorld-v0')
     env.reset()

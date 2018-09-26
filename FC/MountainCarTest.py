@@ -11,13 +11,13 @@ for t in range(10):
 print (env.observation_space.low)
 isd = False
 i = 0
+S0 = env.reset()
 
 while  isd:
     Sn, r, isd, info = env.step(env.action_space.sample())
     i += 1
-    print ("Sn: {}, Reward: {}, isd: {}, info:{}".format(Sn, r, isd, info))
+    #print ("Sn: {}, Reward: {}, isd: {}, info:{}".format(Sn, r, isd, info))
     env.render()
 
 print(i)
-a = input("")
 env.env.close()
